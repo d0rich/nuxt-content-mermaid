@@ -1,6 +1,9 @@
+type ColorType = 'default' | '@nuxtjs/color-mode'
+
 interface MermaidConfig {
   enabled?: boolean
-  color?: 'default' | '@nuxtjs/color-mode'
+  color?: ColorType
+  spinnerComponent?: string
 }
 
 declare module 'nuxt/schema' {
@@ -12,6 +15,7 @@ declare module 'nuxt/schema' {
 export default defineAppConfig({
   contentMermaid: {
     enabled: true,
-    color: 'default'
+    color: 'default' as ColorType,
+    spinnerComponent: 'DAnimationSpinner'
   }
 })
