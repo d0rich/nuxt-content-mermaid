@@ -2,6 +2,10 @@ type ColorType = 'default' | '@nuxtjs/color-mode'
 
 interface MermaidConfig {
   enabled?: boolean
+  /**
+   * @default 'default'
+   * @description 'default' or '@nuxtjs/color-mode'
+   */
   color?: ColorType
   spinnerComponent?: string
 }
