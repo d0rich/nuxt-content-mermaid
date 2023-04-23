@@ -37,14 +37,15 @@ export default defineNuxtPlugin(() => {
         })
       })
     } catch (e) {
-      throw new Error('@nuxtjs/color-mode is required with current options for mermaid plugin.')
+      throw new Error(
+        '@nuxtjs/color-mode is required with current options for mermaid plugin.'
+      )
     }
   } else {
     mermaid.initialize({
-      startOnLoad: false,
+      startOnLoad: false
     })
   }
-
 
   return {
     provide: {
