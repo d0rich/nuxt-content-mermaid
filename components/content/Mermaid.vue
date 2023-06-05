@@ -28,7 +28,9 @@ async function renderMermaidDiagram() {
 }
 
 onMounted(() => {
-  renderMermaidDiagram()
+  setTimeout(() => {
+    renderMermaidDiagram()
+  }, 100)
 })
 </script>
 
