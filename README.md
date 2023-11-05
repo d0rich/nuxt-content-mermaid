@@ -1,3 +1,5 @@
+> This project is moved to the monorepo: https://github.com/d0rich/esprit
+
 # @d0rich/nuxt-content-mermaid
 
 This layer allows you to use [mermaid](https://mermaid-js.github.io/mermaid/#/) in your [nuxt content](https://content.nuxtjs.org/) markdown files.
